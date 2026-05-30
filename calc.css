@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+section {
+    width: min(90vw, 420px);
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cal_container {
+    width: 100%;
+}
+
+.cal_inp input {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid lightgray;
+    border-radius: 0.75rem;
+    background-color: rgb(225, 223, 223);
+    font-size: 1.8rem;
+    text-align: right;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+}
+
+.cal_numb {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.cal_numb div {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cal_numb button,
+.cal_numbtn .cal_oparation {
+    flex: 1;
+    min-width: 0;
+    height: 3rem;
+    text-align: center;
+    background-color: lightblue;
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
+
+.cal_numbtn button {
+    background-color: linen;
+}
+
+.cal_numb button:last-child,
+.cal_numbtn .cal_oparation:last-child {
+    flex: 1;
+}
+
+button:hover,
+.cal_numbtn .cal_oparation:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    section {
+        width: min(70vw, 500px);
+    }
+    .cal_inp input {
+        font-size: 2rem;
+        height: 3.2rem;
+    }
+    .cal_numb button,
+    .cal_numbtn .cal_oparation {
+        height: 3.2rem;
+        font-size: 1.05rem;
+    }
+}
+
+@media (min-width: 900px) {
+    section {
+        width: min(45vw, 520px);
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+        width: min(30vw, 560px);
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <div class="cal_container">
+                <div class="cal_inp">
+                    <input type="text" readonly id="val_numb">
+                </div>
+                <div class="cal_numb">
+                    <div>
+                        <button onclick="clear_inp()">C</button>
+                        <button onclick="ent_numb('%')">%</button>
+                        <button onclick="backSpace()"><i class="fa-solid fa-delete-left"></i></button>
+                        <button onclick="ent_numb('/')">/</button>
+                    </div>
+                    <div class="cal_numbtn">
+                        <button onclick="ent_numb('7')">7</button>
+                        <button onclick="ent_numb('8')">8</button>
+                        <button onclick="ent_numb('9')">9</button>
+                        <button class="cal_oparation" onclick="ent_numb('*')">*</button>
+                    </div>
+                    <div class="cal_numbtn">
+                        <button onclick="ent_numb('4')">4</button>
+                        <button onclick="ent_numb('5')">5</button>
+                        <button onclick="ent_numb('6')">6</button>
+                        <button class="cal_oparation" onclick="ent_numb('-')">-</button>
+                    </div>
+                    <div class="cal_numbtn">
+                        <button onclick="ent_numb('1')">1</button>
+                        <button onclick="ent_numb('2')">2</button>
+                        <button onclick="ent_numb('3')">3</button>
+                        <button class="cal_oparation" onclick="ent_numb('+')">+</button>
+                    </div>
+                    <div class="cal_numbtn">
+                        <button onclick="ent_numb('00')">00</button>
+                        <button onclick="ent_numb('0')">0</button>
+                        <button onclick="ent_numb('.')">.</button>
+                        <button class="cal_oparation" onclick="calculate_ans()">=</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="calc.js"></script>
+
+</html>
